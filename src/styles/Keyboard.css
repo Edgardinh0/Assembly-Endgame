@@ -1,0 +1,28 @@
+.keyboard {
+    padding: 60px;
+    max-width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.keyboard > button {
+    font-size: 22px;
+    font-family: "Hanken Grotesk", Arial, sans-serif;
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    background-color: #FCBA29;
+    border: 1px solid #D7D7D7;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.keyboard > button.correct {
+    background-color: #29fc37;
+}
+
+.keyboard > button.wrong {
+    background-color: #fc3029;
+}

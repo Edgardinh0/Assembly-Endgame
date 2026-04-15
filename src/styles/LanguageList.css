@@ -1,0 +1,32 @@
+.language-container {
+    margin: 30px;
+    display: flex;
+    width: 350px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.language {
+    width:fit-content;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+    position: relative;
+}
+
+.language.lost::before {
+    content: "💀";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 0.85rem;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}

@@ -1,0 +1,20 @@
+.word {
+    display: flex;
+    gap: 3px;
+}
+
+.letter {
+    background-color: #404040bf;
+    font-size: 28px;
+    font-weight: 600;
+    padding: 5px;
+    width: 30px;
+    height: 36px;
+    aspect-ratio: 1 / 1;
+    text-align: center;
+    border-bottom: solid #d3d3d3;
+}
+
+.letter.missed {
+    color: #fc3029;
+}

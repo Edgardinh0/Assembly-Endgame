@@ -1,0 +1,30 @@
+.status {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    width: 500px;
+    height: 52px;
+}
+
+.status.won {
+    background-color: rgba(33, 183, 96, 0.829);
+}
+
+.status.lost {
+    background-color: rgba(183, 33, 33, 0.829);
+}
+
+.status.farewell {
+    background-color: rgba(158, 33, 183, 0.829);
+    font-size: 22px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.status > h2 {
+    margin:0
+}
