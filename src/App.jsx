@@ -5,6 +5,7 @@ import LanguageList from './components/LanguageList'
 import WordDisplay from './components/WordDisplay'
 import Keyboard from './components/Keyboard'
 import NewGameButton from './components/NewGameButton'
+import Confetti from 'react-confetti'
 import { languages } from './components/languages'
 import { getRandomWord } from './components/utils'
 import './App.css'
@@ -35,6 +36,7 @@ function App() {
       <WordDisplay wordArray={wordArray} guessedLetters={guessedLetters} isGameLost={isGameLost}/>
       <Keyboard word={wordArray} guessedLetters={guessedLetters} setGuessedLetters={setGuessedLetters} isGameOver={isGameOver}/>
       {isGameOver && <NewGameButton resetGame={resetGame}/>}
+      {isGameWon && <Confetti />}
     </main>
   )
 }
